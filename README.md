@@ -11,9 +11,30 @@ You must set your routes to the same page controller:
 '_404_' => 'your-page-comtroller/index',  // The main 404 route
 
 
+#Features
+
+* Store website page contents in a database for easy management
+
+* Automatically installs
+
+* Load page data with one call
+
+* Add a new page by passing an array
+
+* Add a new page by setting the class variables
+
+* Update a page by setting the class variables and passing the page id
+
+* Update a page by passing the page id and an array
+
+* Delete a page by passing the page id
+
+* Delete a page by passing the page name
+
+
 #Installation
 
-The first time you call DbPage::load() it checks to see if it is installed if not this package automatically creates a table for you - Default: pages
+The first time you call DbPage::load() it checks to see if the it is installed if not this package automatically creates a table for you - Default: pages
 
 
 # Basic usage example:
