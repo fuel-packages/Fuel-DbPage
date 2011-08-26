@@ -2,6 +2,15 @@
 
 Load pages from a database table to make application more dynamic.
 
+#Important Notes:
+
+Fuel versions prior to version 1.1 use \Uri::detect()
+Fuel version 1.1 now uses \Input::uri();
+
+To correct this for the version you are using edit classes/dbpage.php line numbers 88 and 89
+
+*** Important - The default is set to version 1.1
+
 #Notes:
 
 You must set your routes to the same page controller:

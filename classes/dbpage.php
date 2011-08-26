@@ -85,7 +85,8 @@ class DbPage {
      */
     public static function load()
     {
-        $segments   = explode('/', \Uri::detect(), 2);
+        //$segments   = explode('/', \Uri::detect(), 2); // Versions prior to 1.1
+        $segments   = explode('/', \Input::uri(), 2);// Version 1.1
         $page       = (!empty($segments [0])) ? $segments [0] : 'home';
         $parameters = (!empty($segments [1])) ? $segments [1] : null;
 
