@@ -2,7 +2,7 @@
 
 Load pages from a database table to make application more dynamic.
 
-#Important Notes:
+###Important Notes:
 
 Fuel versions prior to version 1.1 use \Uri::detect()
 Fuel version 1.1 now uses \Input::uri();
@@ -11,7 +11,7 @@ To correct this for the version you are using edit classes/dbpage.php line numbe
 
 *** Important - The default is set to version 1.1
 
-#Notes:
+###Notes:
 
 You must set your routes to the same page controller:
 
@@ -20,7 +20,7 @@ You must set your routes to the same page controller:
 '_404_' => 'your-page-comtroller/index',  // The main 404 route
 
 
-#Features
+###Features
 
 * Store website page contents in a database for easy management
 
@@ -41,12 +41,12 @@ You must set your routes to the same page controller:
 * Delete a page by passing the page name
 
 
-#Installation
+###Installation
 
 The first time you call DbPage::load() it checks to see if the it is installed if not this package automatically creates a table for you - Default: pages
 
 
-# Basic usage example:
+###Basic usage example:
 
 // You have two options you can autoload the package in config:
 
