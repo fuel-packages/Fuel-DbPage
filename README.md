@@ -1,4 +1,4 @@
-# DBPage
+# DbPage
 
     Load pages from a database table to make application more dynamic.
 
