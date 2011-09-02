@@ -1,4 +1,4 @@
-# A Basic Page loader Package for Fuel PHP
+# DBPage
 
     Load pages from a database table to make application more dynamic.
 
