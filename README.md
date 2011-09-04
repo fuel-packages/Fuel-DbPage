@@ -13,11 +13,21 @@
 
 ###Notes:
 
-    You must set your routes to the same page controller:
+    All routes will work as normal apart from must set the default _404_ routes to your_page_controller/index:
 
-    '_root_' => 'your-page-controller/index', // The default route
+    '_root_' => 'your-page-controller/index', // The default route for the home page is optional
 
-    '_404_' => 'your-page-comtroller/index',  // The main 404 route
+    '_404_' => 'your-page-controller/index',  // The main 404 route MUST BE SET!
+
+    You can add any other routes you require as normal for example:
+
+    'admin'     => 'admin/admin',
+
+    'contact'   => 'contact',
+
+    'blog/:day/:month/:year'    => 'blog/entry',
+
+    etc...
 
 
 ###Features
