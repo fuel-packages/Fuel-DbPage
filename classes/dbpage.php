@@ -88,16 +88,16 @@ class DbPage {
      */
     public static function load()
     {
+    	//$segments   = explode('/', \Uri::detect(), 3); // Versions prior to 1.1
         $segments = explode('/', \Input::uri(), 3);
 
         $page = ( ! empty($segments[0])) ? $segments[0] : null;
         $parameters = ( ! empty($segments[1])) ? $segments[1] : null;
 
-		// If it fails move on a segment
 		if ( ! isset($page))
 		{
-			$page = ( ! empty($segments[1])) ? $segments[1] : 'home';
-			$parameters = ( ! empty($segments[2])) ? $segments[2] : null;
+        	$page = ( ! empty($segments[1])) ? $segments[1] : 'home';
+        	$parameters = ( ! empty($segments[2])) ? $segments[2] : null;
 		}
 
         $ignore = array(
